@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lungten Zangmo</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="watchingbl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="school.html">SCHOOL</a></li>
+                    <li><a href="Hobby.html">HOBBIES</a></li>
+                    <li><a href="Family.html">FAMILY</a></li>
+                    <li><a href="Friend.html">FRIEND</a></li>
+                    <li><a href="Others.html">OTHER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="content">
+            <h1>Watching Bl</h1>
+            <p>Boys' love (Japanese: ボーイズ ラブ, Hepburn: bōizu rabu), also known by its abbreviation BL (ビーエル, bīeru), is a genre of fictional media originating in Japan 
+                that depicts homoerotic relationships between male characters.[a] It is typically created by women for a female audience, distinguishing it from homoerotic media created by and for gay men, though BL does also attract a male audience and can be produced by male creators. 
+                BL spans a wide range of media, including manga, anime, drama CDs, novels, video games, television series, films, and fan works.</p>
+        </div>
+    </section>
+    </div>
+        <div class="animation-item">
+            <h2>Some other Drama</h2>
+            <ul>
+                <li>Star In My Mind</li>
+                <li>About Youth</li>
+                <li>Ghost Host, Ghost House</li>
+                <li>Roommate of Poongduk 302</li>
+                <li>Mr.Heart</li>
+                <li>That's my Candy</li>
+                <li>Work From heart</li>
+                <li>Our Dating Sim</li>
+                <li>Candy Crush Paradox</li>
+                <li>Vanishing My First LOve</li>
+                <li>Blue of Winter</li>
+                <li>Oh! Here Comes Trouble</li>
+                <li>First Love Again</li>
+                <li>Stay With Me</li>
+            </ul>
+        </div>
+    </div>
+    <div class="go-back-container">
+        <a href="hobby.html" class="go-back-button">
+            <i class="fas fa-arrow-left"></i> Go Back To Hobby
+        </a>
+    </div>
+</body>
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+</script>
+</html>

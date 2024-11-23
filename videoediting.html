@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lungten Zangmo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="hobby.css">
+    <link rel="stylesheet" href="videoediting.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="school.html">SCHOOL</a></li>
+                    <li><a href="Hobby.html">HOBBIES</a></li>
+                    <li><a href="Family.html">FAMILIES</a></li>
+                    <li><a href="Friend.html">FRIEND</a></li>
+                    <li><a href="Others.html">OTHER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+    <main>
+        <section class="Campus">
+            <h1>These are some of my Edits</h1>
+            <video src="1.mp4" width="500px" controls autoplay muted loop></video>
+            <video src="2.mp4" width="500px" controls autoplay muted loop></video>
+            <video src="3.mp4" width="500px" controls autoplay muted loop></video>
+            <video src="4.mp4" width="500px" controls autoplay muted loop></video>
+            <video src="5.mp4" width="500px" controls autoplay muted loop></video>
+            <video src="6.mp4" width="500px" controls autoplay muted loop></video>
+            <video src="7.mp4" width="500px" controls autoplay muted loop></video>
+        </section>
+
+        <section class="upload-section">
+            <h1>Upload and Edit Your Videos</h1>
+            <form class="upload-form">
+                <input type="file" accept="video/*" id="video-upload" />
+                <button type="button" onclick="uploadVideo()">Upload Video</button>
+            </form>
+        </section>
+
+        <section class="recent-uploads">
+            <h2>Recent Uploads</h2>
+            <div id="uploads-container">
+                <!-- Uploaded videos will be appended here -->
+            </div>
+        </section>
+    </main>
+    <div class="go-back-container">
+        <a href="hobby.html" class="go-back-button">
+            <i class="fas fa-arrow-left"></i> Go Back To Hobby
+        </a>
+    </div>
+    <script>
+      // Show the navigation menu
+      function showMenu() {
+          document.getElementById("navLinks").classList.add("active");
+      }
+
+      // Hide the navigation menu
+      function hideMenu() {
+          document.getElementById("navLinks").classList.remove("active");
+      }
+
+      // Function to handle video upload
+      function uploadVideo() {
+          const fileInput = document.getElementById('video-upload');
+          const file = fileInput.files[0];
+
+          // Check if a file was selected
+          if (file) {
+              console.log('Selected file:', file.name);
+              alert(`Uploading video: ${file.name}`); // This should now show an alert with the file name
+
+              // Create a new video element
+              const videoElement = document.createElement('video');
+              videoElement.src = URL.createObjectURL(file); // Use the local URL for the uploaded file
+              videoElement.classList.add('video-style'); // Add the class to ensure the same size as "Campus" videos
+              videoElement.controls = true;
+              videoElement.autoplay = true;
+              videoElement.loop = true;
+              videoElement.muted = true;
+
+              // Add the newly created video element to the "Recent Uploads" section
+              const uploadsContainer = document.getElementById('uploads-container');
+              uploadsContainer.appendChild(videoElement);
+
+              // Optionally, clear the file input after upload
+              fileInput.value = '';
+          } else {
+              alert('Please select a video file before uploading.');
+          }
+      }
+  </script>  
+</body>
+</html>

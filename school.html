@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lungten Zangmo</title>
+    <link rel="stylesheet" href="school.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="school.html">SCHOOL</a></li>
+                    <li><a href="Hobby.html">HOBBIES</a></li>
+                    <li><a href="Family.html">FAMILY</a></li>
+                    <li><a href="Friend.html">FRIEND</a></li>
+                    <li><a href="Others.html">OTHER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="content">
+            <h1>School</h1>
+            <p>School is a foundational institution in most societies, serving as a place where children and young people gain knowledge, social skills, and discipline. Beyond academics, schools play a key role in developing critical thinking, creativity, and social awareness. They foster a sense of community, where students not only learn from teachers but also from their peers through interaction, collaboration, and shared experiences.</p>
+        </div>
+    </section>
+    <section id="school" class="school-section py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-4 hobby-card-left">
+                        <div class="hobby-card">
+                            <img src="thrimshinglogo.jpeg" alt="First School" class="img-fluid rounded-circle">
+                            <h3>First School</h3>
+                            <p>Thrimshing Middle Secondary School</p>
+                            <a href="firstschool.html">Click Here</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 hobby-card-right">
+                        <div class="hobby-card">
+                            <img src="yhsslogo.jpeg" alt="High School" class="img-fluid rounded-circle">
+                            <h3>High School</h3>
+                            <p>Yangchenphug Higher Secondary School</p>
+                            <a href="lastschool.html">Click Here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    </section>       
+</body>
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+</script>
+<footer>
+    <h4>Contact</h4>
+    <p>17360401,lungtenzangmo707@gmail.com</p>
+</footer>
+</html>

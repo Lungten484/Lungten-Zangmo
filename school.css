@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    overflow: hidden;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    float: left;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.hobbies-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    max-width: 100%;
+    background-color: #cf54cf;
+}
+
+.hobby-card {
+    width: px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+.hobby-card:first-child {
+    align-self: flex-start; /* Align the first card to the left */
+}
+
+.hobby-card:last-child {
+    align-self: flex-end; /* Align the second card to the right */
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+}
+
+.hobby-card img {
+    position: center;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        text-align: left;
+    }
+
+    .hobby-card {
+        margin-bottom: 30px;
+    }
+}
+footer {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #a11fa5;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p{
+    color: #fff;
+}

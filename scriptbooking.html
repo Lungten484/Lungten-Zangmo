@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lungten Zangmo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="drawing.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="school.html">School</a></li>
+                    <li><a href="Hobby.html">Hobbies</a></li>
+                    <li><a href="Family.html">Families</a></li>
+                    <li><a href="Friend.html">Friend</a></li>
+                    <li><a href="Others.html">OTHER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <div class="content">
+            <h1>Scrapbooking</h1>
+        </div>
+    <section class="image-gallery">
+        <h3>This are some of my drawing</h3>
+        <div class="gallery">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 4">
+            <img src="6.jpg" alt="Image 4">
+            <img src="7.jpg" alt="Image 4">
+            <img src="8.jpg" alt="Image 4">
+            <img src="9.jpg" alt="Image 4">
+            <img src="10.jpg" alt="Image 4">
+            <img src="11.jpg" alt="Image 4">
+            <img src="12.jpg" alt="Image 4">
+            <img src="13.jpg" alt="Image 4">
+            <img src="14.jpg" alt="Image 4">
+            <img src="15.jpg" alt="Image 4">
+            <img src="16.jpg" alt="Image 4">
+        </div>
+    </section>
+    <div class="go-back-container">
+        <a href="hobby.html" class="go-back-button">
+            <i class="fas fa-arrow-left"></i> Go Back To Hobby
+        </a>
+    </div>
+    <script>
+        var navLinks = document.getElementById('navLinks');
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+    </body>
+</body>
+
+</html>

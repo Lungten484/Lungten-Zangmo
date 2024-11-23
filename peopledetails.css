@@ -1,0 +1,43 @@
+/* Styling for the result table */
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid blue;
+}
+
+.result-table th,
+.result-table td {
+  border: 1px solid blue;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Green background for table headers */
+.result-table th {
+  background-color: rgb(24, 96, 211);
+  color: white;
+  font-weight: bold;
+}
+.go-back-button {
+  display: inline-block; /* Make it behave like a button */
+  padding: 12px 24px; /* Increased padding for more space inside the button */
+  background-color: #cf54cf; /* Purple color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration: none; /* Ensure no underline */
+  margin: 10px; /* Adds space around the button */
+}
+
+.go-back-button:hover {
+  background-color: #a11fa5; /* Darker purple on hover */
+}
+
+.go-back-button i {
+  margin-right: 12px; /* Increased space between the icon and text */
+}
+
