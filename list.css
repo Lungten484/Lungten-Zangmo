@@ -1,0 +1,141 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background: #a11fa5;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+/* Styles the table headings */
+th {
+  background: #cf54cf;
+  /* Change to your desired color */
+  color: white;
+  /* Text color */
+  font-weight: bold;
+}
+
+/* Styles the entire table for consistency */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid #f764de;
+  /* Matches the heading color or custom */
+}
+
+/* Alternating row background for better readability */
+tbody tr:nth-child(even) {
+  background: #f798df;
+  /* Light shade matching the color scheme */
+}
+
+tbody tr:nth-child(odd) {
+  background: #ffffff;
+  /* White for contrast */
+}
+
+/* Table cells */
+th,
+td {
+  border: 1px solid #dd66f5;
+  /* Matches the theme */
+  padding: 0.75rem;
+  text-align: left;
+}
+
+form {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 20px);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #af4ca2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a425b4;
+}
+
+.go-back-container {
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+   /* Full viewport height */
+}
+
+.go-back-button {
+  display: inline-block; /* Make it behave like a button */
+  padding: 10px 20px;
+  background-color:   #cf54cf; /* Purple color */
+  ;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration: none; /* Ensure no underline */
+}
+
+.go-back-button:hover {
+  background-color: #a11fa5; /* Darker blue on hover */
+}
+
+.go-back-button i {
+  margin-right: 8px; /* Space between the icon and the text */
+}

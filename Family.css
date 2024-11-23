@@ -1,0 +1,99 @@
+header {
+    background-color: #f37ee9;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.family-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.member {
+    text-align: center;
+    color: bisque;
+    margin: 20px;
+}
+
+.member p {
+    color: #fff;
+}
+
+.member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#gallery {
+    text-align: center;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.go-back-container {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Optional background to distinguish the area */
+}
+
+.go-back-container {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: auto; /* Adjust height to fit content */
+    padding: 20px; /* Add padding for spacing */
+    margin: 0 auto; /* Center container within the page */
+}
+
+.go-back-button {
+    display: inline-block; /* Button styling */
+    padding: 10px 20px;
+    background-color: #cf54cf; /* Purple color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* No underline */
+}
+
+.go-back-button:hover {
+    background-color: #a11fa5; /* Darker purple on hover */
+}
+
+.go-back-button i {
+    margin-right: 8px; /* Space between the icon and the text */
+}
+

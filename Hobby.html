@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lungten Zangmo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="hobby.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="school.html">SCHOOL</a></li>
+                    <li><a href="Hobby.html">HOBBIES</a></li>
+                    <li><a href="Family.html">FAMILIES</a></li>
+                    <li><a href="Friend.html">FRIEND</a></li>
+                    <li><a href="Others.html">OTHER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+    <div class="hobby-container">
+        <div class="hobby-card">
+            <img src="animation.jpg" alt="Animation">
+            <h3>Animation</h3>
+            <p>Animation is a filmmaking technique by which still images 
+                are manipulated to create moving images.</p>
+            <a href="animation.html"><button>MORE</button></a>
+        </div>
+        <div class="hobby-card">
+            <img src="drama.jpeg" alt="Picnic">
+            <h3>Drama</h3>
+            <p>The drama genre is a broad category that features stories 
+                portraying human experiences, emotions, conflicts, and relationships in a realistic and 
+                emotionally impactful way.</p>
+            <a href="drama.html"><button>MORE</button></a>
+        </div>
+        <div class="hobby-card">
+            <img src="drawing.jpg" alt="Social Services">
+            <h3>Drawing</h3>
+            <p>A graphic representation by lines of an object or idea, as with a pencil;
+                 a delineation of form without reference to color.</p>
+            <a href="drawing.html"><button>MORE</button></a>
+        </div>
+        <div class="hobby-card">
+            <img src="music.jpeg" alt="Anime">
+            <h3>Music</h3>
+            <p> an art of sound in time that expresses ideas and emotions in significant forms through the elements of rhythm, melody, harmony, and color. the tones or sounds employed, occurring in single line (melody) or multiple lines (harmony),
+                 and sounded or to be sounded by one or more voices or instruments, or both.</p>
+            <a href="music.html"><button>MORE</button></a>
+        </div>
+        <div class="hobby-card">
+            <img src="webtoon.jpg" alt="Drama">
+            <h3>Reading</h3>
+            <p>Experience different emotions through storytelling.</p>
+            <a href="reading.html"><button>MORE</button></a>
+        </div>
+        <div class="hobby-card">
+            <img src="watchingbl.jpg" alt="Hanging Out">
+            <h3>Watching BL</h3>
+            <p>is a genre of fictional media originating in Japan that depicts homoerotic relationships between male characters.</p>
+            <a href="watchingbl.html"><button>MORE</button></a>
+        </div>
+        <div class="hobby-card">
+            <img src="videoediting.png" alt="Reading">
+            <h3>Video Editing</h3>
+            <p>Video editing is the art of manipulating and combining video files to create a completed video project. </p>
+            <a href="videoediting.html"><button>MORE</button></a>
+        </div>
+        <div class="hobby-card">
+            <img src="scrapbooking.jpeg" alt="Reading">
+            <h3>Scrapbooking</h3>
+            <p>Scrapbooking is a method of preserving, presenting, and arranging personal and family history in the form of a book, box, or card.</p>
+            <a href="scriptbooking.html"><button>MORE</button></a>
+        </div>
+    </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById('navLinks');
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+</body>
+<footer>
+    <h4>Contact</h4>
+    <p>17360401,lungtenzangmo707@gmail.com</p>
+</footer>
+</html>

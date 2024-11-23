@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    position: sticky;
+    overflow: hidden;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    float: left;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        text-align: left;
+    }
+
+    .hobby-card {
+        margin-bottom: 30px;
+    }
+}
+.details h3 {
+    color: #fff;
+    text-align: center;
+}
+.details p{
+    color: #fff;
+    text-align: center;
+}
+section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color:#cf54cf;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* School Introduction */
+.school-intro {
+    text-align: center;
+    background-color: #ecf0f1;
+    padding: 60px 20px;
+    margin-top: 80px;
+}
+
+.school-intro h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.school-intro p {
+    font-size: 16px;
+}
+
+/* Academic Excellence */
+.academic-excellence h2, 
+.extracurricular h2, 
+.facilities h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.academic-excellence p, 
+.extracurricular p {
+    font-size: 16px;
+}
+
+/* Facilities Section */
+.facilities ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.facilities ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Image Gallery Styling */
+.image-gallery {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 23%; /* Adjust this depending on the desired image size */
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners to images */
+}
+.go-back-button {
+    display: inline-block; /* Make it behave like a button */
+    padding: 12px 24px; /* Increased padding for more space inside the button */
+    background-color: #cf54cf; /* Purple color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Ensure no underline */
+    margin: 10px; /* Adds space around the button */
+  }
+  
+  .go-back-button:hover {
+    background-color: #a11fa5; /* Darker purple on hover */
+  }
+  
+  .go-back-button i {
+    margin-right: 12px; /* Increased space between the icon and text */
+  }

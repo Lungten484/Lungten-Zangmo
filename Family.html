@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lungten Zangmo</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Family.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="school.html">SCHOOL</a></li>
+                    <li><a href="Hobby.html">HOBBIES</a></li>
+                    <li><a href="Family.html">FAMILIES</a></li>
+                    <li><a href="Friend.html">FRIEND</a></li>
+                    <li><a href="Others.html">OTHER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+    <header>
+        <h1>Welcome to Our Family Page</h1>
+        <p>A place where we celebrate our family history, values, and memories.</p>
+    </header>
+    <section id="family-intro">
+        <h2>Meet the Family</h2>
+        <div class="family-members">
+            <div class="member">
+                <img src="apa.jpg" alt="Photo of Dad">
+                <h3>Kelzang Tshering</h3>
+                <p>Father</p>
+                <p>Department of Immigration</p>
+            </div>
+            <div class="member">
+                <img src="ama.jpg" alt="Photo of Mom">
+                <h3>Choki Wangmo</h3>
+                <p>Mother</p>
+                <p>House Wife</p>
+            </div>
+            <div class="member">
+                <img src="ugyendema.jpg" alt="Photo of Daughter">
+                <h3>Ugyen Dema</h3>
+                <p>Student</p>
+                <p>Loseling Middle Secondary School</p>
+            </div>
+            <div class="member">
+                <img src="kuenley.jpg" alt="Photo of son">
+                <h3>Ngawang Kuenley Sithub</h3>
+                <p>Son</p>
+                <p>Lungtenzampa Middle Secondary School</p>
+            </div>
+            <div class="member">
+                <img src="kuenga.jpg" alt="Photo of son">
+                <h3>Kuenga Rinchen Gyeltshen</h3>
+                <p>Son</p>
+                <p>Babesa Primary School</p>
+            </div>
+        </div>
+        <section id="gallery">
+        <h2>Family Photo Gallery</h2>
+        <div class="gallery-images">
+            <img src="f1.jpg" alt="Family Event">
+            <img src="f2.jpg" alt="Vacation">
+            <img src="f3.jpg" alt="Picnic">
+        </div>
+    </section>
+    </section>
+    </section>
+    <div class="go-back-container">
+        <a href="index.html" class="go-back-button">
+            <i class="fas fa-arrow-left"></i> Go Back To Home
+        </a>
+    </div>
+    <script>
+        var navLinks = document.getElementById('navLinks');
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lungten Zangmo</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="school.html">SCHOOL</a></li>
+                    <li><a href="Hobby.html">HOBBIES</a></li>
+                    <li><a href="Family.html">FAMILY</a></li>
+                    <li><a href="Friend.html">FRIEND</a></li>
+                    <li><a href="Others.html">OTHER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="content">
+            <h1>Welcome to My Personal Website</h1>
+            <p>Hi, I am Lungten Zangmo, a passionate DSDA student with a focus on data analysis, machine learning, and python programming.</p>
+        </div>
+    </section>
+    <section class="present">
+        <div class="leader-container">
+            <img src="me.jpg" alt="Group Leader" class="leader-image">
+            <div class="leader-description">
+                <h2>Lungten Zangmo</h2>
+                <p><strong>Date of Birth:</strong> September 5, 2004</p>
+                <p><strong>Village:</strong> Trashigang, Thrimshing</p>
+                <p><strong>Occupation:</strong> Student</p>
+                <p><strong>Course:</strong> Data Science and Data Analytics, second year</p>
+                <p><strong>Top hobby:</strong>Watching Drama, Watching Animation, Reading Webtoon and Comics, Paintimg</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100073564940276&mibextid=ZbWKwL" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.tiktok.com/@neekoo29?_t=8rbhV8JjHNs&_r=1" target="_blank" class="social-link">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://wa.me/1730401" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:lungtenzangmo707@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>            
+        </div> 
+    </section>
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+</script>
+</body>
+<footer>
+    <h4>Contact</h4>
+    <p>17360401,lungtenzangmo707@gmail.com</p>
+</footer>
+</html>

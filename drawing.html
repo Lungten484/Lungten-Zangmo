@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lungten Zangmo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="drawing.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="school.html">SCHOOL</a></li>
+                    <li><a href="Hobby.html">HOBBIES</a></li>
+                    <li><a href="Family.html">FAMILIES</a></li>
+                    <li><a href="Friend.html">FRIEND</a></li>
+                    <li><a href="Others.html">OTHER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <div class="content">
+            <h1>Drawing</h1>
+            <p>Drawing is a deeply fulfilling and versatile hobby that offers both relaxation and creative expression.
+            Whether you're sketching with pencil, painting with watercolors, or exploring digital mediums, drawing allows you to tap into your imagination and develop a personal style. </p>
+        </div>
+    </div>
+    </section>
+    <section class="image-gallery">
+        <h3>This are some of my drawing</h3>
+        <div class="gallery">
+            <img src="WhatsApp Image 2024-11-10 at 17.17.39_cc7147c4.jpg" alt="Image 1">
+            <img src="WhatsApp Image 2024-11-10 at 17.18.09_0d0a57f0.jpg" alt="Image 2">
+            <img src="WhatsApp Image 2024-11-10 at 17.18.09_82efb4fe.jpg" alt="Image 3">
+            <img src="WhatsApp Image 2024-11-10 at 17.18.09_9b670521.jpg" alt="Image 4">
+            <img src="WhatsApp Image 2024-11-10 at 17.18.10_1e68ea88.jpg" alt="Image 4">
+            <img src="WhatsApp Image 2024-11-10 at 17.18.10_370260c3.jpg" alt="Image 4">
+            <img src="WhatsApp Image 2024-11-10 at 17.18.10_a768ffb6.jpg" alt="Image 4">
+            <img src="WhatsApp Image 2024-11-10 at 17.18.11_465c33fe.jpg" alt="Image 4">
+            <img src="WhatsApp Image 2024-11-10 at 17.18.11_7ba21803.jpg" alt="Image 4">
+            <img src="WhatsApp Image 2024-11-10 at 17.18.11_96501b7f.jpg" alt="Image 4">
+            <img src="WhatsApp Image 2024-11-10 at 17.18.12_0198d106.jpg" alt="Image 4">
+            <img src="WhatsApp Image 2024-11-10 at 17.18.12_54b7fbcf.jpg" alt="Image 4">
+                <img src="WhatsApp Image 2024-11-10 at 17.18.12_88a9614d.jpg" alt="Image 4">
+                <img src="WhatsApp Image 2024-11-10 at 17.18.13_1d11027c.jpg" alt="Image 4">
+                <img src="WhatsApp Image 2024-11-10 at 17.18.13_5ce3c643.jpg" alt="Image 4">
+        </div>
+    </section>
+    <div class="go-back-container">
+        <a href="hobby.html" class="go-back-button">
+            <i class="fas fa-arrow-left"></i> Go Back To Hobby
+        </a>
+    </div>
+    <script>
+        var navLinks = document.getElementById('navLinks');
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+</body>
+
+</html>

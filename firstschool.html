@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lungten Zangmo</title>
+    <link rel="stylesheet" href="firstschool.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="school.html">SCHOOL</a></li>
+                    <li><a href="Hobby.html">HOBBIES</a></li>
+                    <li><a href="Family.html">FAMILY</a></li>
+                    <li><a href="Friend.html">FRIEND</a></li>
+                    <li><a href="Others.html">OTHER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="details">
+            <h3>Thrimshing Middle Secondary School</h3>
+            <p>Thrimshing Central School (TCS) was officially consecrated and inaugurated by HRH The Gyaltshab Jigme Dorji Wangchuck on September 16. The construction of the school was completed on September 3 last year at a total cost of Nu 141.43 million, which was funded by the Government of India.</p>
+            <p><strong>Launched On:</strong> April-2015</p>
+            <p><strong>Location:</strong>Tashigang, Thrimshing</p>
+        </div>
+    </section>
+    <!-- Academic Excellence -->
+    <section class="academic-excellence">
+        <h2>Academic Excellence</h2>
+        <p>Our comprehensive curriculum is designed to meet global standards, fostering critical thinking and creativity.</p>
+    </section>
+
+    <!-- Extracurricular Activities -->
+    <section class="extracurricular">
+        <h2>Extracurricular Activities</h2>
+        <p>Beyond academics, Thrimshing School offers a wide range of extracurricular activities. Our students have excelled in sports, cultural clubs, and inter-school competitions, winning numerous accolades.</p>
+    </section>
+
+    <!-- Facilities -->
+    <section class="facilities">
+        <h2>Our Facilities</h2>
+        <ul>
+            <li>State-of-the-art laboratories</li>
+            <li>Modern sports complex</li>
+            <li>Well-stocked library</li>
+            <li>Smart classrooms with the latest technology</li>
+        </ul>
+    </section>
+    <section class="image-gallery">
+        <div class="gallery">
+            <img src="thrimshing1.jpeg" alt="Image 1">
+            <img src="thrimshing2.jpg" alt="Image 2">
+            <img src="thrimshing3.jpg" alt="Image 3">
+            <img src="thrimshing4.jpg" alt="Image 4">
+        </div>
+    </section>
+</body>
+<div class="go-back-container">
+    <a href="school.html" class="go-back-button">
+        <i class="fas fa-arrow-left"></i> Go Back To School
+    </a>
+</div>
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+</script>
+<footer>
+    <h4>Contact</h4>
+    <p>17360401,lungtenzangmo707@gmail.com</p>
+</footer>
+</html>

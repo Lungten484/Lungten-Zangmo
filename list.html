@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lungten Zangmo</title>
+  <link rel="stylesheet" href="list.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>My Watchlist</h1>
+  </header>
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>SL No</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Rating</th>
+          <th>Rated</th>
+        </tr>
+      </thead>
+      <tbody id="watchlist">
+        <tr>
+          <td>1</td>
+          <td>Demon Slayer</td>
+          <td>Animations</td>
+          <td>9/10</td>
+          <td>Overrated</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Breaking Bad</td>
+          <td>Dramas</td>
+          <td>10/10</td>
+          <td>Overrated</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Given</td>
+          <td>BL</td>
+          <td>8/10</td>
+          <td>Underrated</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form id="add-form">
+      <h2>Add to Watchlist</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter title" required>
+
+      <label for="category">Category:</label>
+      <select id="category" required>
+        <option value="Animations">Animations</option>
+        <option value="Dramas">Dramas</option>
+        <option value="BL">BL</option>
+        <option value="Recently Watched">Recently Watched</option>
+      </select>
+
+      <label for="rating">Rating:</label>
+      <input type="text" id="rating" placeholder="Enter rating (e.g., 9/10)" required>
+
+      <label for="rated">Rated:</label>
+      <select id="rated" required>
+        <option value="Overrated">Yes</option>
+        <option value="Underrated">No</option>
+      </select>
+
+      <button type="submit">Add</button>
+    </form>
+    <div class="go-back-container">
+      <a href="Others.html" class="go-back-button">
+          <i class="fas fa-arrow-left"></i> Go Back To Other
+      </a>
+  </div>
+  </main>
+  <script src="list.js"></script>
+</body>
+</html>

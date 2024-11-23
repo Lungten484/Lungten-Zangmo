@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lungten Zangmo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="guessing.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+  <div class="grid-container">
+    <h1>Guess the Relationship!</h1>
+    <p class="message">Can you guess the relationship for this person?</p>
+
+    <div class="name-display">?</div>
+
+    <input type="text" class="guess" placeholder="Your guess (e.g., Friend, Mother)">
+    <button class="check">Check!</button>
+    <button class="again">Play Again</button>
+
+    <p>Result: <span class="result">?</span></p>
+  </div>
+  <div class="go-back-container">
+    <a href="Others.html" class="go-back-button">
+      <i class="fas fa-arrow-left"></i> Go Back To Other
+    </a>
+  </div>
+  <script>
+    'use strict';
+
+    // List of names and their relationships
+    const people = [
+      { name: "Kelzang Tshering", relation: "Father" },
+      { name: "Choki Wangmo", relation: "Mother" },
+      { name: "Ugyen Dema", relation: "Sister" },
+      { name: "Ngawang Kuenley Sithub", relation: "Brother" },
+      { name: "Kuenga Rinchen Gyeltshen", relation: "Brother" },
+      { name: "Sonam Dema", relation: "Best Friend" },
+      { name: "Yenten Chezom", relation: "Best Friend" },
+      { name: "Jamyang Choden", relation: "Best Friend" },
+      { name: "Yeshi Choden", relation: "Close Friend" },
+      { name: "Chimi Rinzin Drukpa", relation: "Classmates" },
+      { name: "Kelden Wangchuk", relation: "Old Classmates" },
+      { name: "Kinga Rabten", relation: "Ex" },
+      { name: "Sangay Penjor", relation: "Teacher" },
+      { name: "Cha Enn Woo", relation: "Idol" },
+      { name: "Sonam Wanchen", relation: "Fav Singer" },
+      { name: "Tandin Bidha", relation: "Fav Actress" },
+      { name: "Singay Wangmo", relation: "Old Classmates"},
+      { name: "Yangchen Wangmo", relation: "Junior"}
+    ];
+
+    // DOM Elements
+    const messageElement = document.querySelector('.message');
+    const nameDisplayElement = document.querySelector('.name-display');
+    const guessInputElement = document.querySelector('.guess');
+    const resultElement = document.querySelector('.result');
+    const checkButton = document.querySelector('.check');
+    const againButton = document.querySelector('.again');
+
+    // Variables to store current person
+    let currentPerson = {};
+
+    // Function to select a random person
+    const getRandomPerson = () => {
+      const randomIndex = Math.floor(Math.random() * people.length);
+      return people[randomIndex];
+    };
+
+    // Start a new game
+    const startGame = () => {
+      currentPerson = getRandomPerson();
+      nameDisplayElement.textContent = currentPerson.name;
+      messageElement.textContent = 'Guess their relationship!';
+      resultElement.textContent = '?';
+      guessInputElement.value = '';
+    };
+
+    // Check the user's guess
+    const checkGuess = () => {
+      const userGuess = guessInputElement.value.trim().toLowerCase();
+
+      if (!userGuess) {
+        messageElement.textContent = 'Please enter your guess!';
+        return;
+      }
+
+      if (userGuess === currentPerson.relation.toLowerCase()) {
+        resultElement.textContent = 'Correct!';
+        messageElement.textContent = 'You guessed it right!';
+      } else {
+        resultElement.textContent = 'Incorrect!';
+        messageElement.textContent = `The correct answer was: ${currentPerson.relation}`;
+      }
+    };
+
+    // Reset the game
+    const resetGame = () => {
+      startGame();
+    };
+
+    // Event Listeners
+    checkButton.addEventListener('click', checkGuess);
+    againButton.addEventListener('click', resetGame);
+
+    // Start the game when the page loads
+    startGame();
+
+
+  </script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>
